@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="bear">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="editinplace.js"></script>
+<link rel="stylesheet" type="text/css" href="editinplace.css">
+	<title>Edit in Place</title>
+</head>
+
+<body ng-controller="polarbearcontroller">
+
+<div class="myclass" ng-click="Texty()" ng-show="justtext" >
+<p>{{message}}</p>
+</div>
+
+<div  ng-click="Edit()" ng-show="justinput">
+<textarea class="myclass" ng-blur="Update()" ng-model="message">
+</textarea>
+</div>
+
+
+   
+
+</body>
+</html>
